@@ -1,7 +1,5 @@
 package com.scs.mobile.zhihu.api.service;
 
-import com.scs.mobile.zhihu.api.entity.Special;
-
 import java.util.List;
 import java.util.Map;
 
@@ -22,5 +20,5 @@ public interface SpecialService {
      *
      * @return List<Special>
      */
-    List<Special> selectRecent();
+    List<Map> selectRecent();
 }

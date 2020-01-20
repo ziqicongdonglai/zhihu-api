@@ -1,6 +1,5 @@
 package com.scs.mobile.zhihu.api.mapper;
 
-import com.scs.mobile.zhihu.api.entity.Special;
 import com.scs.mobile.zhihu.api.ZhihuApiApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +19,7 @@ class SpecialMapperTest {
 
     @Test
     void selectRecent() {
-        List<Special> specials = specialMapper.selectRecent();
+        List<Map> specials = specialMapper.selectRecent();
         specials.forEach(System.out::println);
     }
 

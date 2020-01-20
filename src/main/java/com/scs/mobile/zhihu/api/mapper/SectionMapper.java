@@ -20,4 +20,12 @@ public interface SectionMapper {
 //    List<Section> getSelectionsBySpecialId(String specialId);
     List<Section> getSectionsBySpecialId(String specialId);
 
+    /**
+     * 限制标签个数
+     *
+     * @param specialId
+     * @return List<Section>
+     */
+    @Select("SELECT * FROM t_section WHERE special_id = #{specialId} LIMIT 0,3")
+    List<Section> getSectionsLimitCount(String specialId);
 }

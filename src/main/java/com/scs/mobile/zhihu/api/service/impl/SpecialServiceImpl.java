@@ -1,6 +1,5 @@
 package com.scs.mobile.zhihu.api.service.impl;
 
-import com.scs.mobile.zhihu.api.entity.Special;
 import com.scs.mobile.zhihu.api.mapper.SpecialMapper;
 import com.scs.mobile.zhihu.api.service.SpecialService;
 import org.springframework.stereotype.Service;
@@ -24,7 +23,7 @@ public class SpecialServiceImpl implements SpecialService {
     }
 
     @Override
-    public List<Special> selectRecent() {
+    public List<Map> selectRecent() {
         return specialMapper.selectRecent();
     }
 }
