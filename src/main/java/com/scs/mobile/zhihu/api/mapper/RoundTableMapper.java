@@ -15,14 +15,13 @@ public interface RoundTableMapper {
      *
      * @return List<RoundTable>
      */
-//    @Select("SELECT * FROM t_round_table ORDER BY visits_count DESC LIMIT 0,4 ")
     @Select("SELECT * FROM t_round_table LIMIT 0,4 ")
     List<RoundTable> selectHot();
 
     /**
      * 查询所有圆桌
      *
-     * @return List<Map>
+     * @return List<RoundTable>
      */
     @Select("SELECT * FROM t_round_table")
     List<RoundTable> selectAll();
